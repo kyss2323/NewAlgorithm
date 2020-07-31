@@ -10,7 +10,7 @@ public class Etc_1356 {
         boolean isYoujinsu = false;
         for(int i=1;i<num.length();i++){
             int subMultiple1 = getSubMultiple(num.substring(0,i));
-            int subMultiple2 = getSubMultiple(num.substring(i,num.length()));
+            int subMultiple2 = getSubMultiple(num.substring(i));
 
             if(subMultiple1 == subMultiple2) {
                 isYoujinsu = true;
