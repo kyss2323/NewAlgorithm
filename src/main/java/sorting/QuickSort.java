@@ -1,6 +1,7 @@
 package sorting;
 
 import java.util.Collections;
+import java.util.List;
 import java.util.Vector;
 public class QuickSort {
 	public void quickSort(List<Integer> arr, int s, int e){
@@ -16,8 +17,8 @@ public class QuickSort {
         }
 
         if(s<right)
-            sort(arr, s, right);
+            quickSort(arr, s, right);
         if(e>left)
-            sort(arr, left, e);
+            quickSort(arr, left, e);
     }
 }
